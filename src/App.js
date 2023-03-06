@@ -6,6 +6,7 @@ import Home from "./component/home/Home";
 import "./index.css"
 import ShoppingListComponent from "./component/test/ShoppingListComponent";
 import LoginPage from "./component/user/LoginPage";
+import BoardComponent from './component/test/BoardComponent';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/user" element={<UserListComponent />} />
             <Route path="/loginPage" element={<LoginPage />} />
             <Route path="/shop" element={<ShoppingListComponent />} />
+            <Route path="/board" element={<BoardComponent />} />
         </Routes>
     );
 };

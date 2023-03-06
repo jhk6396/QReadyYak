@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import Footer from '../nav/BotNavbar';
 import Navbar from '../nav/TopNavbar'; 
 import sea from 'C:/Users/82104/Desktop/ToyProject/exam/src/main/reactfront/src/images/sea.jpg'
 const Home = () => {
@@ -47,11 +48,15 @@ const Home = () => {
                             <span className='text-3xs text-gray-500'>
                                 <Link to={"/shop"}>쇼핑 리스트</Link>
                             </span>
+                            <span className= 'text-3xs text-gray-500'>
+                                <Link to={"/board"}>게시판</Link>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <Footer/>
         </div>
     );
 };
